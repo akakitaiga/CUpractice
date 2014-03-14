@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Delayed Autosave</title>
+</head>
+<body>
+
+	<h2>Autosaving Text Input</h2>
+	<textarea rows="10" cols="60" id="important"></textarea>
+<script>
+	function save(){
+		console.log("Save");
+	}		
+	var delay = 5000;//9000
+	var timeoutId;
+	function autosave(){
+		clearTimeout(timeoutID);
+		timeoutId = setTimeout(save, delay);
+
+		
+	
+
+	var textarea=document.getElementById('important');
+	textarea.addEventListener('keyup', autosave, false);
+</script>
+</body>
+</html>	
